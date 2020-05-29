@@ -1,0 +1,3 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+DEFINE Final_Proj_ECE485_lib Final_Proj_ECE485_lib
+ASSIGN Final_Proj_ECE485_lib libMode shared

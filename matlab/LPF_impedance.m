@@ -8,7 +8,7 @@ N=5;                    %5th order
 a = 1:N;
 b = 1:N;
 g = 1:N;
-ripple = 0.2;
+ripple = 0.5;
 beta = log(coth(ripple/17.37));
 y = sinh(beta/(2*N));
 %calculate a, b, and g values

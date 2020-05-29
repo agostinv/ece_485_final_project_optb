@@ -1,0 +1,30 @@
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Port:TermG1  P1 0 Num=1 Z=50 Ohm Noise=yes 
+Port:TermG2  P2 0 Num=2 Z=50 Ohm Noise=yes 
+MLOC2:TL12  N__2 Subst="MSub1" W=446.649606 mil L=383.168504 mil Mod=1 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=.5 GHz Stop=5 GHz Step=10 MHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+model MSub1 MSUB H=62 mil Er=4.29 Mur=1 Cond=5.8e7 Hu=3.9e+34 mil T=1.37 mil TanD=0.014 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+MLIN2:TL1  P1 N__1 Subst="MSub1" W=119.675591 mil L=408.917323 mil Wall1=0 mm Wall2=0 mm Mod=1 
+MLIN2:TL2  N__1 N__4 Subst="MSub1" W=66.905118 mil L=419.531496 mil Wall1=0 mm Wall2=0 mm Mod=1 
+MLOC2:TL10  N__1 Subst="MSub1" W=704.129921 mil L=375.664173 mil Wall1=0 mm Wall2=0 mm Mod=1 
+MLOC2:TL20  N__4 Subst="MSub1" W=110.391732 mil L=410.472441 mil Wall1=0 mm Wall2=0 mm Mod=1 
+MLIN2:TL22  N__4 N__2 Subst="MSub1" W=32.612047 mil L=429.964567 mil Wall1=0 mm Wall2=0 mm Mod=1 
+MLIN2:TL23  N__8 P2 Subst="MSub1" W=119.675591 mil L=408.917323 mil Wall1=0 mm Wall2=0 mm Mod=1 
+MLIN2:TL24  N__2 N__11 Subst="MSub1" W=32.612047 mil L=429.964567 mil Wall1=0 mm Wall2=0 mm Mod=1 
+MLOC2:TL25  N__11 Subst="MSub1" W=110.391732 mil L=410.472441 mil Wall1=0 mm Wall2=0 mm Mod=1 
+MLIN2:TL26  N__11 N__8 Subst="MSub1" W=66.905118 mil L=419.531496 mil Wall1=0 mm Wall2=0 mm Mod=1 
+MLOC2:TL27  N__8 Subst="MSub1" W=704.129921 mil L=375.664173 mil Wall1=0 mm Wall2=0 mm Mod=1 

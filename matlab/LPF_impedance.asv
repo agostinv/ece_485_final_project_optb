@@ -8,7 +8,7 @@ N=5;                    %5th order
 a = 1:N;
 b = 1:N;
 g = 1:N;
-ripple = .1;
+ripple = .2;
 beta = log(coth(ripple/17.37));
 y = sinh(beta/(2*N));
 %calculate a, b, and g values
@@ -39,12 +39,12 @@ Z0_Ele(5) = 50/g(5);
 
 
 %kuroda identities
-n1 = 1 + (Z0_Ele(1)/(R0));                    %1 + cap/tline
+n1 = 1 + (1/(Z0_Ele(1)*R0));                    %1 + cap/tline
 n2 = 1 + n1;                        %1 + tline/ind
-n3 = 1 + Z0_Ele(1)/(n1*Z0_Ele(2));            %1 + tline/ind
+n3 = 1 + 1/(n1*Z0_Ele(2)*Z0_Ele(1));            %1 + tline/ind
 Tc1 = (n2*R0);                         %first stub
 Ttl1 = R0*n2/n1;                       %first tline
-Tc2 = n3*Z0_Ele(1)/(n1);                 %second stub
+Tc2 = n3/n1*Z0_Ele(1)/(n3);                 %second stub
 Ttl2 = n3*Z0_Ele(2);                     %second tline
 
 %final impedances

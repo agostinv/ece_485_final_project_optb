@@ -4,18 +4,24 @@ hpeesofsim (*) 450.shp Jan 21 2016, MINT version 4
 Copyright 1995 - 2015 Keysight Technologies, 1989-2016.
 
 
-SP SP1[1] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>   freq=(500 MHz->3.5 GHz)
+SP SP1[1] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>   freq=(500 MHz->5 GHz)
 Warning detected by hpeesofsim during SP analysis 'SP1'.
-    UserValue(8.499924) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee5'
+    UserValue(9.616870) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee3'
 
 Warning detected by hpeesofsim during SP analysis 'SP1'.
-    UserValue(8.499924) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee3'
+    UserValue(7.251869) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee2'
 
 Warning detected by hpeesofsim during SP analysis 'SP1'.
-    UserValue(8.499924) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee2'
+    UserValue(16.876023) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee1'
 
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(7.251869) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee5'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(16.876023) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee4'
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
 Resource usage:
-  Total stopwatch time     =     1.36 seconds.
+  Total stopwatch time     =     1.41 seconds.
 

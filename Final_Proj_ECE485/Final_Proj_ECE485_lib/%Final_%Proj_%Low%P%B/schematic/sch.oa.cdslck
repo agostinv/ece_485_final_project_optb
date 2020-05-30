@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      agostinv
+HostName                       xa-mimeapp09.engr.oregonstate.edu
+ProcessIdentifier              1800
+ProcessCreationTime_UTC        1590876031
+ProcessCreationTime_Readable   05/30/20 15:00:31 Pacific Daylight Time
+AppIdentifier                  OA File System Design Manager
+OSType                         win32
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         Z:\ADS_workspace\Final_Proj_ECE485\Final_Proj_ECE485_lib\%Final_%Proj_%Low%P%B\schematic\sch.oa.cdslck
+TimeEditLocked                 05/30/20 15:02:42 Pacific Daylight Time

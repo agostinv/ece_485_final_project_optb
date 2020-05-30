@@ -3,15 +3,18 @@ Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="Final
 Port:TermG1  P1 0 Num=1 Z=50 Ohm Noise=yes 
 Port:TermG2  P2 0 Num=2 Z=50 Ohm Noise=yes 
 #uselib "ckt" , "TLOC"
-TLOC:TL19  P3 0 Z=35 Ohm E=45 F=2.5 GHz 
+TLOC:TL19  P3 0 Z=143.6 Ohm E=45 F=2 GHz 
 Port:TermG3  P3 0 Num=3 Z=50 Ohm Noise=yes 
+MTEE_ADS:Tee4  N__11 N__8 N__21 Subst="MSub1" W1=W3 mil W2=W2 mil W3=W1 mil 
 Port:TermG4  P4 0 Num=4 Z=50 Ohm Noise=yes 
-MLOC2:TL10  N__19 Subst="MSub1" W=W2 mil L=321.065354 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
-MLOC2:TL12  N__2 Subst="MSub1" W=W6 mil L=314.356299 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MTEE_ADS:Tee5  N__24 N__17 N__25 Subst="MSub1" W1=W5 mil W2=W4 mil W3=W3 mil 
+MTEE_ADS:Tee1  N__20 N__1 N__19 Subst="MSub1" W1=W1 mil W2=W2 mil W3=W3 mil 
+MLOC2:TL10  N__19 Subst="MSub1" W=W2 mil L=445.594488 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MLOC2:TL12  N__2 Subst="MSub1" W=W6 mil L=389.139764 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
 S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
 SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
 
-SweepPlan: SP1_stim Start=.5 GHz Stop=3.5 GHz Step=10 MHz 
+SweepPlan: SP1_stim Start=.5 GHz Stop=5 GHz Step=10 MHz 
 
 OutputPlan:SP1_Output \
       Type="Output" \
@@ -23,41 +26,38 @@ OutputPlan:SP1_Output \
 #load "python","LinearCollapse"
 Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
 model MSub1 MSUB H=62 mil Er=4.29 Mur=1 Cond=5.8e7 Hu=1.0e+033 mm T=1.37 mil TanD=0.014 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
-MLIN2:TL2  N__1 N__12 Subst="MSub1" W=W3 mil L=332.206693 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
-MLIN2:TL3  N__4 N__5 Subst="MSub1" W=W5 mil L=344.551181 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
-MLOC2:TL11  N__9 Subst="MSub1" W=W4 mil L=314.356299 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MLIN2:TL1  P1 N__20 Subst="MSub1" W=W1 mil L=408.917323 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MLIN2:TL2  N__1 N__12 Subst="MSub1" W=W3 mil L=423.448819 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MLIN2:TL3  N__4 N__5 Subst="MSub1" W=W5 mil L=429.547244 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MLOC2:TL51  N__21 Subst="MSub1" W=W2 mil L=445.594488 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MLOC2:TL11  N__9 Subst="MSub1" W=W4 mil L=394.692913 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MLIN2:TL52  N__17 N__11 Subst="MSub1" W=W3 mil L=423.448819 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MLIN2:TL50  N__8 P2 Subst="MSub1" W=W1 mil L=408.917323 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
 #uselib "ckt" , "TLOC"
-TLOC:TL20  N__10 0 Z=26 Ohm E=45 F=2.5 GHz 
+TLOC:TL20  N__10 0 Z=25.3 Ohm E=45 F=2 GHz 
+TLIN:TL35  P3 N__15 Z=76.71 Ohm E=45 F=2 GHz 
 #uselib "ckt" , "TLOC"
-TLOC:TL34  N__15 0 Z=17 E=45 F=2.5 GHz 
-TLIN:TL35  P3 N__15 Z=100 Ohm E=45 F=2.5 GHz 
-TLIN:TL36  N__15 N__10 Z=120 Ohm E=45 F=2.5 GHz 
-MLIN2:TL1  P1 N__20 Subst="MSub1" W=W1 mil L=326.757087 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
-MTEE_ADS:Tee1  N__20 N__1 N__19 Subst="MSub1" W1=W1 mil W2=W2 mil W3=W3 mil 
+TLOC:TL34  N__15 0 Z=31.2 E=45 F=2 GHz 
+TLIN:TL36  N__15 N__10 Z=91.9 Ohm E=45 F=2 GHz 
 MTEE_ADS:Tee2  N__12 N__4 N__9 Subst="MSub1" W1=W3 mil W2=W4 mil W3=W5 mil 
 
 W1=119.675591
 
-W2=171.154724
+W2=7.091457
 
-W3=83.866142
+W3=52.421654
 
-W4=258.830709
+W4=244.543307
 
-W5=30.450945
+W5=33.721417
 
-W6=258.830709
+W6=324.294488
 MTEE_ADS:Tee3  N__5 N__16 N__2 Subst="MSub1" W1=W5 mil W2=W6 mil W3=W5 mil 
-MTEE_ADS:Tee4  N__11 N__8 N__21 Subst="MSub1" W1=W3 mil W2=W2 mil W3=W1 mil 
-MTEE_ADS:Tee5  N__24 N__17 N__25 Subst="MSub1" W1=W5 mil W2=W4 mil W3=W3 mil 
-TLIN:TL45  N__10 N__18 Z=120 Ohm E=45 F=2.5 GHz 
-TLIN:TL47  N__18 P4 Z=100 Ohm E=45 F=2.5 GHz 
+MLIN2:TL54  N__16 N__24 Subst="MSub1" W=W5 mil L=429.547244 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MLOC2:TL53  N__25 Subst="MSub1" W=W4 mil L=394.692913 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+TLIN:TL55  N__10 N__18 Z=91.9 Ohm E=45 F=2 GHz 
 #uselib "ckt" , "TLOC"
-TLOC:TL48  N__18 0 Z=17 Ohm E=45 F=2.5 GHz 
+TLOC:TL56  N__18 0 Z=31.2 E=45 F=2 GHz 
+TLIN:TL57  N__18 P4 Z=76.71 Ohm E=45 F=2 GHz 
 #uselib "ckt" , "TLOC"
-TLOC:TL49  P4 0 Z=35 Ohm E=45 F=2.5 GHz 
-MLIN2:TL50  N__8 P2 Subst="MSub1" W=W1 mil L=326.757087 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
-MLOC2:TL51  N__21 Subst="MSub1" W=W2 mil L=321.065354 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
-MLIN2:TL52  N__17 N__11 Subst="MSub1" W=W3 mil L=332.206693 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
-MLOC2:TL53  N__25 Subst="MSub1" W=W4 mil L=314.356299 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
-MLIN2:TL54  N__16 N__24 Subst="MSub1" W=W5 mil L=344.551181 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+TLOC:TL58  P4 0 Z=143.6 Ohm E=45 F=2 GHz 

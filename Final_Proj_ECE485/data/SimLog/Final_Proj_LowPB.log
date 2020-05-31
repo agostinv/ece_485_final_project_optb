@@ -4,24 +4,409 @@ hpeesofsim (*) 450.shp Jan 21 2016, MINT version 4
 Copyright 1995 - 2015 Keysight Technologies, 1989-2016.
 
 
-SP SP1[1] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>   freq=(500 MHz->5 GHz)
+OPTIM Optim1[1] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=(0->25)
+Pt DC convergence is used.
+
+SP Optim1[1].SP1[0] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=0  freq=(0 Hz->5 GHz)
 Warning detected by hpeesofsim during SP analysis 'SP1'.
-    UserValue(9.616870) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee3'
+    UserValue(6.812008) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee3'
 
 Warning detected by hpeesofsim during SP analysis 'SP1'.
-    UserValue(7.251869) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee2'
+    UserValue(5.136785) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee2'
 
 Warning detected by hpeesofsim during SP analysis 'SP1'.
-    UserValue(16.876023) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee1'
+    UserValue(5.136785) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee5'
 
-Warning detected by hpeesofsim during SP analysis 'SP1'.
-    UserValue(7.251869) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee5'
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #0:
+  CurrentEF: 5.7801389730101
+  Optimization variables:
+    TL10.L = 11.3181e-03
+    TL11.L = 10.0252e-03
+    TL12.L = 9.88415e-03
+    TL2.L = 10.5408e-03
+    TL3.L = 10.7922e-03
+    TL51.L = 11.3181e-03
+    TL52.L = 10.5408e-03
+    TL53.L = 10.0252e-03
+    TL54.L = 10.7922e-03
 
-Warning detected by hpeesofsim during SP analysis 'SP1'.
-    UserValue(16.876023) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee4'
+SP Optim1[1].SP1[1] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=1  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #1:
+  CurrentEF: 0.736849471702556
+  Optimization variables:
+    TL10.L = 11.287e-03
+    TL11.L = 10.1994e-03
+    TL12.L = 10.602e-03
+    TL2.L = 10.4711e-03
+    TL3.L = 11.1704e-03
+    TL51.L = 11.287e-03
+    TL52.L = 10.4711e-03
+    TL53.L = 10.1994e-03
+    TL54.L = 11.1704e-03
 
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SP Optim1[1].SP1[2] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=2  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #2:
+  CurrentEF: 0.716681685183108
+  Optimization variables:
+    TL10.L = 11.3419e-03
+    TL11.L = 9.94059e-03
+    TL12.L = 10.7166e-03
+    TL2.L = 10.3965e-03
+    TL3.L = 11.1729e-03
+    TL51.L = 11.3419e-03
+    TL52.L = 10.3965e-03
+    TL53.L = 9.94059e-03
+    TL54.L = 11.1729e-03
+
+SP Optim1[1].SP1[3] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=3  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #3:
+  CurrentEF: 0.68011450886302
+  Optimization variables:
+    TL10.L = 11.1547e-03
+    TL11.L = 9.73166e-03
+    TL12.L = 10.8869e-03
+    TL2.L = 9.64545e-03
+    TL3.L = 11.0357e-03
+    TL51.L = 11.1547e-03
+    TL52.L = 9.64545e-03
+    TL53.L = 9.73166e-03
+    TL54.L = 11.0357e-03
+
+SP Optim1[1].SP1[4] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=4  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #4:
+  CurrentEF: 0.633041532387668
+  Optimization variables:
+    TL10.L = 9.99867e-03
+    TL11.L = 9.45393e-03
+    TL12.L = 10.8655e-03
+    TL2.L = 7.4054e-03
+    TL3.L = 10.6325e-03
+    TL51.L = 9.99867e-03
+    TL52.L = 7.4054e-03
+    TL53.L = 9.45394e-03
+    TL54.L = 10.6325e-03
+
+SP Optim1[1].SP1[5] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=5  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #5:
+  CurrentEF: 0.626872531129935
+  Optimization variables:
+    TL10.L = 9.71913e-03
+    TL11.L = 9.29472e-03
+    TL12.L = 10.9323e-03
+    TL2.L = 6.82437e-03
+    TL3.L = 10.4905e-03
+    TL51.L = 9.71913e-03
+    TL52.L = 6.82437e-03
+    TL53.L = 9.29473e-03
+    TL54.L = 10.4905e-03
+
+SP Optim1[1].SP1[6] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=6  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #6:
+  CurrentEF: 0.609980699778472
+  Optimization variables:
+    TL10.L = 9.53503e-03
+    TL11.L = 8.80163e-03
+    TL12.L = 11.1793e-03
+    TL2.L = 5.78411e-03
+    TL3.L = 10.2164e-03
+    TL51.L = 9.53502e-03
+    TL52.L = 5.78411e-03
+    TL53.L = 8.80164e-03
+    TL54.L = 10.2164e-03
+
+SP Optim1[1].SP1[7] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=7  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #7:
+  CurrentEF: 0.608751735485532
+  Optimization variables:
+    TL10.L = 9.60805e-03
+    TL11.L = 8.81021e-03
+    TL12.L = 11.1676e-03
+    TL2.L = 5.80892e-03
+    TL3.L = 10.2426e-03
+    TL51.L = 9.60804e-03
+    TL52.L = 5.80892e-03
+    TL53.L = 8.81022e-03
+    TL54.L = 10.2426e-03
+
+SP Optim1[1].SP1[8] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=8  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #8:
+  CurrentEF: 0.602711280477326
+  Optimization variables:
+    TL10.L = 9.89667e-03
+    TL11.L = 8.70482e-03
+    TL12.L = 11.0218e-03
+    TL2.L = 5.40098e-03
+    TL3.L = 10.2938e-03
+    TL51.L = 9.89667e-03
+    TL52.L = 5.40098e-03
+    TL53.L = 8.70484e-03
+    TL54.L = 10.2939e-03
+
+SP Optim1[1].SP1[9] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=9  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #9:
+  CurrentEF: 0.597360209313334
+  Optimization variables:
+    TL10.L = 10.6777e-03
+    TL11.L = 8.67601e-03
+    TL12.L = 10.7588e-03
+    TL2.L = 5.25806e-03
+    TL3.L = 10.4478e-03
+    TL51.L = 10.6777e-03
+    TL52.L = 5.25806e-03
+    TL53.L = 8.67603e-03
+    TL54.L = 10.4478e-03
+
+SP Optim1[1].SP1[10] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=10  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #10:
+  CurrentEF: 0.594007113947548
+  Optimization variables:
+    TL10.L = 11.0358e-03
+    TL11.L = 8.54119e-03
+    TL12.L = 10.8197e-03
+    TL2.L = 5.3274e-03
+    TL3.L = 10.3585e-03
+    TL51.L = 11.0358e-03
+    TL52.L = 5.3274e-03
+    TL53.L = 8.54122e-03
+    TL54.L = 10.3584e-03
+
+SP Optim1[1].SP1[11] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=11  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #11:
+  CurrentEF: 0.593277710685227
+  Optimization variables:
+    TL10.L = 11.2765e-03
+    TL11.L = 8.49004e-03
+    TL12.L = 10.8441e-03
+    TL2.L = 5.4096e-03
+    TL3.L = 10.3125e-03
+    TL51.L = 11.2765e-03
+    TL52.L = 5.4096e-03
+    TL53.L = 8.49008e-03
+    TL54.L = 10.3125e-03
+
+SP Optim1[1].SP1[12] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=12  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #12:
+  CurrentEF: 0.592779418983326
+  Optimization variables:
+    TL10.L = 11.3773e-03
+    TL11.L = 8.49207e-03
+    TL12.L = 10.8437e-03
+    TL2.L = 5.40455e-03
+    TL3.L = 10.3144e-03
+    TL51.L = 11.2641e-03
+    TL52.L = 5.40455e-03
+    TL53.L = 8.4921e-03
+    TL54.L = 10.3144e-03
+
+SP Optim1[1].SP1[13] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=13  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #13:
+  CurrentEF: 0.592721614397245
+  Optimization variables:
+    TL10.L = 11.3774e-03
+    TL11.L = 8.49214e-03
+    TL12.L = 10.8412e-03
+    TL2.L = 5.40455e-03
+    TL3.L = 10.3129e-03
+    TL51.L = 11.2642e-03
+    TL52.L = 5.40455e-03
+    TL53.L = 8.49221e-03
+    TL54.L = 10.313e-03
+
+SP Optim1[1].SP1[14] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=14  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #14:
+  CurrentEF: 0.591376473428308
+  Optimization variables:
+    TL10.L = 11.5545e-03
+    TL11.L = 8.62796e-03
+    TL12.L = 10.8462e-03
+    TL2.L = 5.40455e-03
+    TL3.L = 10.2078e-03
+    TL51.L = 11.4487e-03
+    TL52.L = 5.40455e-03
+    TL53.L = 8.64478e-03
+    TL54.L = 10.2515e-03
+
+SP Optim1[1].SP1[15] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=15  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #15:
+  CurrentEF: 0.580010701840719
+  Optimization variables:
+    TL10.L = 12.8755e-03
+    TL11.L = 8.71351e-03
+    TL12.L = 11.3019e-03
+    TL2.L = 5.40455e-03
+    TL3.L = 9.30048e-03
+    TL51.L = 12.7719e-03
+    TL52.L = 5.40455e-03
+    TL53.L = 8.76224e-03
+    TL54.L = 9.42608e-03
+
+SP Optim1[1].SP1[16] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=16  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #16:
+  CurrentEF: 0.577591358145142
+  Optimization variables:
+    TL10.L = 13.3613e-03
+    TL11.L = 8.78191e-03
+    TL12.L = 11.5018e-03
+    TL2.L = 5.40455e-03
+    TL3.L = 8.94494e-03
+    TL51.L = 13.2476e-03
+    TL52.L = 5.40455e-03
+    TL53.L = 8.80835e-03
+    TL54.L = 9.03302e-03
+
+SP Optim1[1].SP1[17] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=17  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #17:
+  CurrentEF: 0.572183934043496
+  Optimization variables:
+    TL10.L = 13.8736e-03
+    TL11.L = 8.98898e-03
+    TL12.L = 11.8884e-03
+    TL2.L = 5.40455e-03
+    TL3.L = 8.37029e-03
+    TL51.L = 13.7391e-03
+    TL52.L = 5.40455e-03
+    TL53.L = 8.90035e-03
+    TL54.L = 8.28924e-03
+
+SP Optim1[1].SP1[18] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=18  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #18:
+  CurrentEF: 0.5715496371548
+  Optimization variables:
+    TL10.L = 13.9803e-03
+    TL11.L = 8.96934e-03
+    TL12.L = 11.9382e-03
+    TL2.L = 5.40455e-03
+    TL3.L = 8.25057e-03
+    TL51.L = 13.8656e-03
+    TL52.L = 5.40455e-03
+    TL53.L = 8.88098e-03
+    TL54.L = 8.22901e-03
+
+SP Optim1[1].SP1[19] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=19  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #19:
+  CurrentEF: 0.570514620654308
+  Optimization variables:
+    TL10.L = 13.8976e-03
+    TL11.L = 8.80727e-03
+    TL12.L = 11.8773e-03
+    TL2.L = 5.40455e-03
+    TL3.L = 8.23822e-03
+    TL51.L = 13.8291e-03
+    TL52.L = 5.40455e-03
+    TL53.L = 8.75351e-03
+    TL54.L = 8.42388e-03
+
+SP Optim1[1].SP1[20] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=20  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #20:
+  CurrentEF: 0.568261635155072
+  Optimization variables:
+    TL10.L = 14.1621e-03
+    TL11.L = 8.6775e-03
+    TL12.L = 11.7287e-03
+    TL2.L = 5.40455e-03
+    TL3.L = 8.39611e-03
+    TL51.L = 14.0375e-03
+    TL52.L = 5.40455e-03
+    TL53.L = 8.54103e-03
+    TL54.L = 8.42063e-03
+
+SP Optim1[1].SP1[21] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=21  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #21:
+  CurrentEF: 0.5667590846413
+  Optimization variables:
+    TL10.L = 14.1947e-03
+    TL11.L = 8.55738e-03
+    TL12.L = 11.4641e-03
+    TL2.L = 5.40455e-03
+    TL3.L = 8.71252e-03
+    TL51.L = 14.0285e-03
+    TL52.L = 5.40455e-03
+    TL53.L = 8.38947e-03
+    TL54.L = 8.6658e-03
+
+SP Optim1[1].SP1[22] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=22  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #22:
+  CurrentEF: 0.566038853373047
+  Optimization variables:
+    TL10.L = 14.4065e-03
+    TL11.L = 8.48624e-03
+    TL12.L = 11.3334e-03
+    TL2.L = 5.40455e-03
+    TL3.L = 8.72571e-03
+    TL51.L = 14.2418e-03
+    TL52.L = 5.40455e-03
+    TL53.L = 8.30381e-03
+    TL54.L = 8.75696e-03
+
+SP Optim1[1].SP1[23] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=23  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #23:
+  CurrentEF: 0.565900469427969
+  Optimization variables:
+    TL10.L = 14.4296e-03
+    TL11.L = 8.48247e-03
+    TL12.L = 11.3445e-03
+    TL2.L = 5.40455e-03
+    TL3.L = 8.67112e-03
+    TL51.L = 14.2747e-03
+    TL52.L = 5.40455e-03
+    TL53.L = 8.29571e-03
+    TL54.L = 8.75251e-03
+
+SP Optim1[1].SP1[24] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=24  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #24:
+  CurrentEF: 0.565823178029386
+  Optimization variables:
+    TL10.L = 14.4436e-03
+    TL11.L = 8.46028e-03
+    TL12.L = 11.3387e-03
+    TL2.L = 5.40455e-03
+    TL3.L = 8.6568e-03
+    TL51.L = 14.2807e-03
+    TL52.L = 5.40455e-03
+    TL53.L = 8.27429e-03
+    TL54.L = 8.75849e-03
+
+SP Optim1[1].SP1[25] <Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic>  optIter=25  freq=(0 Hz->5 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #25:
+  CurrentEF: 0.565018666802094
+  Optimization variables:
+    TL10.L = 14.5024e-03
+    TL11.L = 8.43677e-03
+    TL12.L = 11.3462e-03
+    TL2.L = 5.45912e-03
+    TL3.L = 8.6232e-03
+    TL51.L = 14.3215e-03
+    TL52.L = 5.45912e-03
+    TL53.L = 8.16231e-03
+    TL54.L = 8.7205e-03
+Optim1[1] reached the iteration limit. 
 
 Resource usage:
-  Total stopwatch time     =     1.41 seconds.
+  Total stopwatch time     =    46.55 seconds.
 

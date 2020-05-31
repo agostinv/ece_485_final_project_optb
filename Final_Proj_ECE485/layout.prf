@@ -1,7 +1,7 @@
-pathBend 1
+pathBend 2
 pathMiterPercent 30.000000
 pathEndCap 1
-pathLayerName default
+pathLayerName cond:drawing
 textFontName Arial For CAE
 textPoint 12
 textJustification 9

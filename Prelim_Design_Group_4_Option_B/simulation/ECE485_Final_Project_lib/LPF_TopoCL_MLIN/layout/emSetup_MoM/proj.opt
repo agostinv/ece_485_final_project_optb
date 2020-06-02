@@ -1,7 +1,7 @@
 simulationMode 2;
 simulationTemperature 298.15;
 # simDir "C:\Users\519cm\Documents\ECE485\Final Project\ECE485_Final_Project_wrk\simulation\ECE485_Final_Project_lib\LPF_TopoCL_MLIN\layout\emSetup_MoM";
-# simTag "M200602104122";
+# simTag "M200602120408";
 logFile "proj.log";
 processPriority Normal;
 mesh_reduction ON;

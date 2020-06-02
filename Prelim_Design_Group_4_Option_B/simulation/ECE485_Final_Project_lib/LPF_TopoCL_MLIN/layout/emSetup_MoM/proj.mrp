@@ -10,4 +10,26 @@ report.
 
 -------------------------------------------------------------------------------
 
+
+--- WARNING -------------------------------------------------------------------
+
+The port setup needed to be corrected:
+TML calibration for port "P1" has been changed
+to TML (zero length) calibration because the
+transmission line of pin "P1" would otherwise
+intersect with the layout.
+
+-------------------------------------------------------------------------------
+
+
+--- WARNING -------------------------------------------------------------------
+
+The port setup needed to be corrected:
+TML calibration for port "P2" has been changed
+to TML (zero length) calibration because the
+transmission line of pin "P2" would otherwise
+intersect with the layout.
+
+-------------------------------------------------------------------------------
+
 Generating mesh at 10 GHz...

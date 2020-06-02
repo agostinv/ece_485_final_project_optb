@@ -1,8 +1,8 @@
-License checkout took 0.216 sec
-License checkout took 0.148 sec
+License checkout took 0.184 sec
+License checkout took 0.134 sec
 Momentum MomEngine_64 13.02.073 (*) built: Feb 20 2019
 Copyright  1992 - 2019 Keysight Technologies
-Simulation started on: Tue Jun  2 10:41:25 2020
+Simulation started on: Tue Jun  2 12:04:09 2020
 Simulation Mode: RF
 Substrate valid
 Using the minimal snap distance of 0.0004 mm
@@ -19,6 +19,26 @@ report.
 Layout simplification started
 .........|.........|.........|.........| 
 Layout simplification finished
+
+--- WARNING -------------------------------------------------------------------
+
+The port setup needed to be corrected:
+TML calibration for port "P1" has been changed
+to TML (zero length) calibration because the
+transmission line of pin "P1" would otherwise
+intersect with the layout.
+
+-------------------------------------------------------------------------------
+
+--- WARNING -------------------------------------------------------------------
+
+The port setup needed to be corrected:
+TML calibration for port "P2" has been changed
+to TML (zero length) calibration because the
+transmission line of pin "P2" would otherwise
+intersect with the layout.
+
+-------------------------------------------------------------------------------
 Generating mesh at 10 GHz...
 S-parameter simulation
 S-parameter simulation started
@@ -27,7 +47,7 @@ S-parameter simulation started
 
 --- WARNING -------------------------------------------------------------------
 
-Layout is electrically large above 1.71 GHz (space wave radiation)
+Layout is electrically large above 1.09 GHz (space wave radiation)
 
 -------------------------------------------------------------------------------
 
@@ -40,9 +60,9 @@ Consider:  - lowering the maximum frequency
 
 -------------------------------------------------------------------------------
 ...reducing mesh
-Automatic selection: direct dense matrix solver
+Automatic selection: direct compressed matrix solver
 Using multi-threading (8 threads)
-Matrix size: 3976 (reduced: 3641)
+Matrix size: 5532 (reduced: 5066)
 
 --- WARNING -------------------------------------------------------------------
 
@@ -68,252 +88,302 @@ Simulation frequency [1] = 0 Hz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
 Simulation frequency [2] = 10 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
 Adaptive:   0.0 % of frequency range covered
 Simulation frequency [3] = 8.57143 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
 Simulation frequency [4] = 7.14286 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
 Simulation frequency [5] = 5.71429 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
 Simulation frequency [6] = 4.28571 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
 Simulation frequency [7] = 2.85714 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
 Simulation frequency [8] = 1.42857 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [9] = 6.19048 GHz
+Simulation frequency [9] = 9.52381 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [10] = 6.50794 GHz
+Simulation frequency [10] = 9.68254 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [11] = 6.03175 GHz
+Simulation frequency [11] = 2.61905 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [12] = 5.2381 GHz
+Simulation frequency [12] = 952.381 MHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [13] = 8.09524 GHz
+Simulation frequency [13] = 1.26984 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [14] = 1.90476 GHz
+Simulation frequency [14] = 793.651 MHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [15] = 9.04762 GHz
+Simulation frequency [15] = 132.275 MHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [16] = 3.33333 GHz
+Simulation frequency [16] = 3.09524 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [17] = 1.74603 GHz
+Simulation frequency [17] = 4.0873 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [18] = 9.68254 GHz
+Simulation frequency [18] = 3.75661 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [19] = 238.095 MHz
+Simulation frequency [19] = 8.73016 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [20] = 2.69841 GHz
+Simulation frequency [20] = 5 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [21] = 1.03175 GHz
+Simulation frequency [21] = 5.95238 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [22] = 2.03704 GHz
+Simulation frequency [22] = 5.79365 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [23] = 8.96825 GHz
+Simulation frequency [23] = 3.97707 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [24] = 9.84127 GHz
+Simulation frequency [24] = 5.59524 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [25] = 9.15344 GHz
+Simulation frequency [25] = 4.64286 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [26] = 7.61905 GHz
+Simulation frequency [26] = 7.85714 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [27] = 6.8254 GHz
+Simulation frequency [27] = 6.54762 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [28] = 4.7619 GHz
+Simulation frequency [28] = 3.42593 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [29] = 3.80952 GHz
+Simulation frequency [29] = 2.02381 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [30] = 5.31746 GHz
+Simulation frequency [30] = 462.963 MHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [31] = 3.96825 GHz
+Simulation frequency [31] = 4.58333 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [32] = 4.02116 GHz
+Simulation frequency [32] = 1.8254 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [33] = 4.60317 GHz
+Simulation frequency [33] = 2.32143 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [34] = 2.2575 GHz
+Simulation frequency [34] = 7.5 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [35] = 3.4127 GHz
+Simulation frequency [35] = 2.17262 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [36] = 767.196 MHz
+Simulation frequency [36] = 3.26058 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [37] = 5.58201 GHz
+Simulation frequency [37] = 4.21958 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [38] = 3.25397 GHz
+Simulation frequency [38] = 3.3157 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [39] = 8.76984 GHz
+Simulation frequency [39] = 1.75926 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [40] = 9.41799 GHz
+Simulation frequency [40] = 820.106 MHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [41] = 5.82011 GHz
+Simulation frequency [41] = 3.48104 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [42] = 9.97354 GHz
+Simulation frequency [42] = 2.47024 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [43] = 8.33333 GHz
+Simulation frequency [43] = 2.24702 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [44] = 7.38095 GHz
+Simulation frequency [44] = 3.52697 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [45] = 79.3651 MHz
+Simulation frequency [45] = 1.11111 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [46] = 5 GHz
+Simulation frequency [46] = 1.00529 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [47] = 3.61111 GHz
+Simulation frequency [47] = 1.89153 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [48] = 502.646 MHz
+Simulation frequency [48] = 2.00176 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [49] = 3.28042 GHz
+Simulation frequency [49] = 8.99471 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
-Simulation frequency [50] = 3.12169 GHz
+Simulation frequency [50] = 8.33333 GHz
 ...solving interaction matrix
 .........|.........|.........|.........| 
 ...calibrating ports
+.........|.........|.........|.........| 
 ...calculating S-parameters
 
 --- WARNING -------------------------------------------------------------------
@@ -326,5 +396,5 @@ Consider     : - increasing maximum number of sample points.
 -------------------------------------------------------------------------------
 Adaptive: frequency range not completely covered
 S-parameter simulation finished
-Simulation finished on: Tue Jun  2 10:45:13 2020
+Simulation finished on: Tue Jun  2 12:06:11 2020
 The simulation results have been saved in dataset "LPF_TopoCL_MLIN_MomRF".

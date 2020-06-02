@@ -1,3 +1,5 @@
+; Top Design: "Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
 
 Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="Final_Proj_ECE485_lib:Final_Proj_LowPB:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
 Port:TermG1  P1 0 Num=1 Z=50 Ohm Noise=yes 
@@ -27,12 +29,12 @@ OutputPlan:SP1_Output \
 Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
 model MSub1 MSUB H=62 mil Er=4.29 Mur=1 Cond=5.8e7 Hu=1.0e+033 mm T=1.37 mil TanD=0.014 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
 MLIN2:TL1  P1 N__20 Subst="MSub1" W=W1 mil L=787.4015748031496 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
-MLIN2:TL2  N__1 N__12 Subst="MSub1" W=W3 mil L=831.406 mil tune{ 207 mil to 1000 mil by 41.5 mil } opt{ 207 mil to 622 mil } Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MLIN2:TL2  N__1 N__12 Subst="MSub1" W=W3 mil L=748.406 mil tune{ 207 mil to 1000 mil by 41.5 mil } opt{ 207 mil to 622 mil } Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
 TLIN:TL57  N__18 P4 Z=76.71 Ohm E=45 F=2 GHz 
 MLIN2:TL3  N__4 N__5 Subst="MSub1" W=W5 mil L=213.417 mil tune{ 150 mil to 637 mil by 21.25 mil } opt{ 212 mil to 637 mil } Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
 MLOC2:TL51  N__21 Subst="MSub1" W=W2 mil L=529.484 mil notune{ 223 mil to 668 mil by 44.6 mil } opt{ 223 mil to 668 mil } Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
 MLOC2:TL11  N__9 Subst="MSub1" W=W4 mil L=581.669 mil notune{ 197 mil to 592 mil by 39.5 mil } opt{ 197 mil to 592 mil } Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
-MLIN2:TL52  N__17 N__11 Subst="MSub1" W=W3 mil L=113.934 mil tune{ 50 mil to 622 mil by 21.25 mil } opt{ 207 mil to 622 mil } Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MLIN2:TL52  N__17 N__11 Subst="MSub1" W=W3 mil L=71.434 mil tune{ 50 mil to 622 mil by 21.25 mil } opt{ 207 mil to 622 mil } Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
 MLIN2:TL50  N__8 P2 Subst="MSub1" W=W1 mil L=787.4015748031496 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
 #uselib "ckt" , "TLOC"
 TLOC:TL20  N__10 0 Z=25.3 Ohm E=45 F=2 GHz 
@@ -59,10 +61,10 @@ W5=71.397 opt{ 23.8 to 71.4 }
 
 W6=269.101 opt{ 162 to 486 }
 MTEE_ADS:Tee3  N__5 N__16 N__2 Subst="MSub1" W1=W5 mil W2=W5 mil W3=W6 mil 
-MLIN2:TL54  N__16 N__24 Subst="MSub1" W=W5 mil L=251.298 mil tune{ 212 mil to 637 mil by 21.25 mil } opt{ 212 mil to 637 mil } Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MLIN2:TL54  N__16 N__24 Subst="MSub1" W=W5 mil L=303.798 mil tune{ 212 mil to 637 mil by 5 mil } opt{ 212 mil to 637 mil } Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
 MLOC2:TL53  N__25 Subst="MSub1" W=W4 mil L=277.135 mil notune{ 197 mil to 592 mil by 39.5 mil } opt{ 197 mil to 592 mil } Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
 
-Optim:"Optim1" OptimType="hpVMO" ErrorForm="L2" MaxIters=25 P=2 DesiredError=0.0 StatusLevel=4 FinalAnalysis="None" NormalizeGoals=no SetBestValues=yes SaveSolns=yes SaveGoals=yes SaveOptimVars=no UpdateDataset=yes SaveNominal=no SaveAllIterations=no UseAllOptVars=yes UseAllGoals=yes SaveCurrentEF=no InitialTemp=0.1 NumShootsPerIter=20 EnableCockpit=no SaveAllTrials=no 
+Optim:"Optim1" OptimType="hpVMO" ErrorForm="L2" MaxIters=25 P=2 DesiredError=0.0 StatusLevel=4 FinalAnalysis="None" NormalizeGoals=no SetBestValues=yes SaveSolns=yes SaveGoals=yes SaveOptimVars=no UpdateDataset=yes SaveNominal=no SaveAllIterations=no UseAllOptVars=yes UseAllGoals=yes SaveCurrentEF=no InitialTemp=0.1 NumShootsPerIter=20 EnableCockpit=no SaveAllTrials=no UseAdvTermCriteria=no CostRelativeTol=1.0e-8 LimitOfContSmallImprovement=5 
 
 OptimGoal:OptimGoal1 Expr="db(S21)" SimInstanceName="SP1" Weight=1 \
 IndepVar[1]="freq" \

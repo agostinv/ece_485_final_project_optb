@@ -1,7 +1,7 @@
-pathBend 2
+pathBend 1
 pathMiterPercent 30.000000
 pathEndCap 1
-pathLayerName cond:drawing
+pathLayerName default
 textFontName Arial For CAE
 textPoint 12
 textJustification 9
@@ -55,7 +55,7 @@ majorGridDisplayY 5
 majorGridDisplayOn 1
 gridDisplayMode 0
 gridSnapOn 1
-gridSnapMode 3
+gridSnapMode 2
 gridColor 104
 windowLLX -200.000000
 windowLLY -200.000000

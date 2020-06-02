@@ -1,0 +1,16 @@
+#Momentum: B.13.02.073 (*) built: Feb 20 2019 
+#Momentum Date and Time: Tue Jun  2 10:41:25 2020
+
+Overall database status : 1 (file present and valid)
+
+Frequency range : from 0.003739921887 GHz to 0.00389257176 GHz.
+
+Requested frequency range : from 0.003739921887 GHz to 0.00389257176 GHz.
+
+Individual status fields : (0 = FALSE, 1 = TRUE)
+ File exists             : 1
+ Substrates match        : 1
+ Frequency-range matches : 1
+
+Corresponding potentialpath : D:\ECE485/
+Corresponding potentialname : D:\ECE485\\substrates\0001.sdb

@@ -1,0 +1,5 @@
+jobName=EmPpMsgs
+jobType=emprep
+designName=ECE485_Final_Project_lib:LPF_TopoCL_MLIN:layout
+ruleFilePath=
+addInfo="EM preprocessor messages displayed as DRC errors"

@@ -1,0 +1,35 @@
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="ECE485finaltest_lib:cell_3:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+MLIN2:TL1  N__1 N__0 Subst="MSub1" W=119.675591 mil L=408.917323 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL2  N__2 N__3 Subst="MSub1" W=16.612913 mil L=437.460630 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL3  N__4 N__5 Subst="MSub1" W=10.878740 mil L=294.414961 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL4  N__6 N__7 Subst="MSub1" W=10.878740 mil L=147.207480 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL5  N__8 N__9 Subst="MSub1" W=16.612913 mil L=437.460630 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL6  N__10 N__11 Subst="MSub1" W=119.675591 mil L=408.917323 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MTEE_ADS:Tee1  N__0 N__2 N__14 Subst="MSub1" W1=25.0 mil W2=25.0 mil W3=50.0 mil 
+MTEE_ADS:Tee2  N__3 N__4 N__28 Subst="MSub1" W1=25.0 mil W2=25.0 mil W3=50.0 mil 
+MTEE_ADS:Tee3  N__5 N__6 N__20 Subst="MSub1" W1=25.0 mil W2=25.0 mil W3=50.0 mil 
+MTEE_ADS:Tee4  N__7 N__8 N__23 Subst="MSub1" W1=25.0 mil W2=25.0 mil W3=50.0 mil 
+MTEE_ADS:Tee5  N__9 N__10 N__26 Subst="MSub1" W1=25.0 mil W2=25.0 mil W3=50.0 mil 
+MLOC2:TL7  N__14 Subst="MSub1" W=38.825354 mil L=427.732283 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLOC2:TL8  N__28 Subst="MSub1" W=188.760236 mil L=399.885827 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLOC2:TL9  N__20 Subst="MSub1" W=58.477559 mil L=421.740157 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLOC2:TL10  N__23 Subst="MSub1" W=188.760236 mil L=399.885827 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLOC2:TL11  N__26 Subst="MSub1" W=38.825354 mil L=427.732283 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+model MSub1 MSUB H=62 mil Er=4.290 Mur=1 Cond=5.8e7 Hu=3.9e+034 mil T=1.37 mil TanD=0.014 Rough=0 mil DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=0 GHz Stop=10.0 GHz Step=0.01 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+Port:Term1  N__1 0 Num=1 Z=50 Ohm Noise=yes 
+Port:Term2  N__11 0 Num=2 Z=50 Ohm Noise=yes 

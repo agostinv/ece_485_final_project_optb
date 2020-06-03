@@ -1,0 +1,51 @@
+
+hpeesofsim (*) 491.update1.0 Mar 16 2019, MINT version 4
+    (64-bit windows built: Sat Mar 16, 2019 19:44:49 +0000)
+
+
+OPTIM Optim1[1] <ECE485_Final_Project_lib:LPF_TopoCL_MLIN_v2:schematic>  optIter=(0->25)
+Warning detected by hpeesofsim during Nominal Optimization `Optim1'.
+    Variable `L6' 
+     OPT variable initial value (0.00988415) is out of min-max range [189, 589]. 
+     Resetting the range...
+Warning detected by hpeesofsim during Nominal Optimization `Optim1'.
+    Variable `L5' 
+     OPT variable initial value (0.0109105) is out of min-max range [229, 629]. 
+     Resetting the range...
+Warning detected by hpeesofsim during Nominal Optimization `Optim1'.
+    Variable `L4' 
+     OPT variable initial value (0.0100252) is out of min-max range [194, 594]. 
+     Resetting the range...
+Warning detected by hpeesofsim during Nominal Optimization `Optim1'.
+    Variable `L3' 
+     OPT variable initial value (0.0107556) is out of min-max range [223, 623]. 
+     Resetting the range...
+Warning detected by hpeesofsim during Nominal Optimization `Optim1'.
+    Variable `L2' 
+     OPT variable initial value (0.0113181) is out of min-max range [245, 645]. 
+     Resetting the range...
+
+SP Optim1[1].SP1[0] <ECE485_Final_Project_lib:LPF_TopoCL_MLIN_v2:schematic>  optIter=0  freq=(500 MHz->5 GHz)
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(9.616870) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee3'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(7.251869) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee2'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(7.251869) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee5'
+
+
+Iteration/Trial #0:
+  CurrentEF: 16.4460102936163
+  Optimization variables:
+    L2 = 11.3180999952e-03
+    L3 = 10.7556000026e-03
+    L4 = 10.0251999902e-03
+    L5 = 10.9104999976e-03
+    L6 = 9.884150005600001e-03
+Optim1[1] terminated due to no more improvement 
+
+Resource usage:
+  Total stopwatch time     =     1.41 seconds.
+

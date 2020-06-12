@@ -23,6 +23,24 @@ stub5 = 143.6;
 stub5len =len45;
 Zl = 50;
 
+stub1cl = 87;
+stub1cllen = len45;
+tline12cl =116;
+tline12cllen=len45;
+stub2cl = 37.4;
+stub2cllen=len45;
+tline23cl=130;
+tline23cllen=len45;
+stub3cl = 73;
+stub3cllen=len45;
+tline34cl=130;
+tline34cllen=len45;
+stub4cl = 37.4;
+stub4cllen=len45;
+tline45cl =116;
+tline45cllen=len45;
+stub5cl = 87;
+stub5cllen =len45;
 
 stub1ni = 138.505000;
 stub1lenni = 0.00076200508;
@@ -121,6 +139,11 @@ S12CL = [];
 S21CL = [];
 S22CL = [];
 
+S11iCL = [];
+S12iCL = [];
+S21iCL = [];
+S22iCL = [];
+
 for freq = frequencies
     %non ideal Tlines
     AbcdNonIdealS1 = inductorSer(Ltline0,freq)*capParallel(cT1,freq)*abcdParamNonIdealStub(stub1ni,freq,stub1len,Lstub1)*inductorSer(Ltline12,freq);
@@ -134,7 +157,8 @@ for freq = frequencies
     AbcdIdeal = abcdParamStub(stub1,freq,stub1len)*abcdParamSeries(tline12,freq,tline12len)*abcdParamStub(stub2,freq,stub2len)*abcdParamSeries(tline23,freq,tline23len)*abcdParamStub(stub3,freq,stub3len)*abcdParamSeries(tline34,freq,tline34len)*abcdParamStub(stub4,freq,stub4len)*abcdParamSeries(tline45,freq,tline12len)*abcdParamStub(stub5,freq,stub5len);
     
     AbcdNonIdealEst = abcdParamStub(stub1ni,freq,stub1lenni)*abcdParamSeries(tline12ni,freq,tline12lenni)*abcdParamStub(stub2ni,freq,stub2lenni)*abcdParamSeries(tline23ni,freq,tline23lenni)*abcdParamStub(stub3ni,freq,stub3lenni)*abcdParamSeries(tline34ni,freq,tline34lenni)*abcdParamStub(stub4ni,freq,stub4lenni)*abcdParamSeries(tline45ni,freq,tline12lenni)*abcdParamStub(stub5ni,freq,stub5lenni);
-
+    
+    AdcdIdealCL = abcdParamStub(stub1cl,freq,stub1cllen)*abcdParamSeries(tline12cl,freq,tline12cllen)*abcdParamStub(stub2cl,freq,stub2cllen)*abcdParamSeries(tline23cl,freq,tline23cllen)*abcdParamStub(stub3cl,freq,stub3cllen)*abcdParamSeries(tline34cl,freq,tline34cllen)*abcdParamStub(stub4cl,freq,stub4cllen)*abcdParamSeries(tline45cl,freq,tline45cllen)*abcdParamStub(stub5cl,freq,stub5cllen);
     %LC circuit
     AbcdLC = inductorSer(L1, freq)*capParallel(C1,freq)*inductorSer(L2,freq)*capParallel(C2,freq)*inductorSer(L3,freq);
     
@@ -147,6 +171,7 @@ for freq = frequencies
     sIdeal=ABCDtoS(AbcdIdeal(1,1),AbcdIdeal(1,2),AbcdIdeal(2,1),AbcdIdeal(2,2), Zo);
     sNonIdeal=ABCDtoS(AbcdNonIdeal(1,1),AbcdNonIdeal(1,2),AbcdNonIdeal(2,1),AbcdNonIdeal(2,2),Zo);
     sNonIdealEst = ABCDtoS(AbcdNonIdealEst(1,1), AbcdNonIdealEst(1,2), AbcdNonIdealEst(2,1), AbcdNonIdealEst(2,2),Zo);
+    sIdealCL = ABCDtoS(AdcdIdealCL(1,1), AdcdIdealCL(1,2), AdcdIdealCL(2,1), AdcdIdealCL(2,2),Zo);
     
     S11LC = [S11LC,sLCIdeal(1,1)];
     S12LC = [S12LC,sLCIdeal(1,2)];
@@ -172,12 +197,93 @@ for freq = frequencies
     S12nie = [S12nie, sNonIdealEst(1,2)];
     S21nie = [S21nie, sNonIdealEst(2,1)];
     S22nie = [S22nie, sNonIdealEst(2,2)];
+    
+    S11iCL = [S11iCL, sIdealCL(1,1)];
+    S12iCL = [S12iCL, sIdealCL(1,2)];
+    S21iCL = [S21iCL, sIdealCL(2,1)];
+    S22iCL = [S22iCL, sIdealCL(2,2)];
 end
 
 S12db = 20*log10(abs(S12ni));
 
 S12niedb =20*log10(abs(S12nie));
 plot(frequencies, S12niedb);
+
+figure;
+title("Ideal Transmission Line for LC");
+S12dB = 20*log10(abs(S12));
+S11dB = 20*log10(abs(S11));
+hold on;
+plot(frequencies, S12dB);
+plot(frequencies,S11dB);
+xlabel("frequency (Hz)");
+ylabel("Maginitude (dB)");
+legend("S12", "S11");
+hold off;
+
+figure;
+title("Lumped model for LC");
+S11LCdB = 20*log10(abs(S11LC));
+S12LCdB = 20*log10(abs(S12LC));
+hold on;
+plot(frequencies, S12LCdB);
+plot(frequencies, S11LCdB);
+
+xlabel("frequency (Hz)");
+ylabel("Maginitude (dB)");
+legend("S12", "S11");
+hold off;
+
+figure;
+title("Non Ideal transmission lines for LC");
+S11niedB = 20*log10(abs(S11nie));
+S12niedB = 20*log10(abs(S12nie));
+hold on;
+plot(frequencies, S12niedB);
+plot(frequencies, S11niedB);
+
+xlabel("frequency (Hz)");
+ylabel("Maginitude (dB)");
+legend("S12", "S11");
+hold off;
+
+figure;
+title("Non Ideal transmission lines for LC with T junctions");
+S11nidB = 20*log10(abs(S11ni));
+S12nidB = 20*log10(abs(S12ni));
+hold on;
+plot(frequencies, S12nidB);
+plot(frequencies, S11nidB);
+xlabel("frequency (Hz)");
+ylabel("Maginitude (dB)");
+legend("S12", "S11");
+hold off;
+
+
+figure;
+title("Ideal Transmission Line CL");
+S11iCLdB = 20*log10(abs(S11iCL));
+S12iCLdB = 20*log10(abs(S12iCL));
+hold on;
+plot(frequencies, S12iCLdB);
+plot(frequencies, S11iCLdB);
+xlabel("frequency (Hz)");
+ylabel("Maginitude (dB)");
+legend("S12", "S11");
+hold off;
+
+figure;
+title("Lumped filter for CL");
+S11CLdB = 20*log10(abs(S11CL));
+S12CLdB = 20*log10(abs(S12CL));
+hold on;
+plot(frequencies, S12CLdB);
+plot(frequencies, S11CLdB);
+xlabel("frequency (Hz)");
+ylabel("Maginitude (dB)");
+legend("S12", "S11");
+hold off;
+
 function [ABCD] = abcdParamStub(zstub,freq,len)
     lambda = (3*10^8)/freq;
     beta = 2*pi/lambda;

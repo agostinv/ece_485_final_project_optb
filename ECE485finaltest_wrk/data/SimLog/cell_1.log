@@ -8,5 +8,5 @@ SP SP1[1] <ECE485finaltest_lib:cell_1:schematic>   freq=(0 Hz->10 GHz)
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
 Resource usage:
-  Total stopwatch time     =     1.48 seconds.
+  Total stopwatch time     =     4.92 seconds.
 

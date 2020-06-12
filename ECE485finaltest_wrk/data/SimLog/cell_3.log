@@ -4,9 +4,182 @@ hpeesofsim (*) 450.shp Jan 21 2016, MINT version 4
 Copyright 1995 - 2015 Keysight Technologies, 1989-2016.
 
 
-SP SP1[1] <ECE485finaltest_lib:cell_3:schematic>   freq=(0 Hz->10 GHz)
+OPTIM Optim1[1] <ECE485finaltest_lib:cell_3:schematic>  optIter=(0->50)
+
+SP Optim1[1].SP1[0] <ECE485finaltest_lib:cell_3:schematic>  optIter=0  freq=(0 Hz->10 GHz)
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(7.998309) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee5'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(11.435808) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee4'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(11.435808) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee2'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(7.998315) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee1'
+
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #0:
+  CurrentEF: 0.0608377466766857
+  Optimization variables:
+    L1 = 303.115
+    L2 = 297.221
+    L3 = 434.569
+    L4 = 440.303
+    L5 = 606.012
+    W1 = 40.513
+    W2 = 14.9626
+    W3 = 139.056
+    W4 = 12.1597
+    W5 = 48.8789
+
+SP Optim1[1].SP1[13] <ECE485finaltest_lib:cell_3:schematic>  optIter=13  freq=(0 Hz->10 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #13:
+  CurrentEF: 0.0719141443762104
+  Optimization variables:
+    L1 = 303.115
+    L2 = 297.221
+    L3 = 434.569
+    L4 = 440.303
+    L5 = 606.012
+    W1 = 40.513
+    W2 = 14.9626
+    W3 = 139.056
+    W4 = 12.1597
+    W5 = 48.8789
+
+SP Optim1[1].SP1[20] <ECE485finaltest_lib:cell_3:schematic>  optIter=20  freq=(0 Hz->10 GHz)
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(6.354155) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee5'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(16.129143) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee4'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(5.816333) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee3'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(16.129143) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee2'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(6.354160) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee1'
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #20:
+  CurrentEF: 0.0533194820845906
+  Optimization variables:
+    L1 = 269.606
+    L2 = 307.326
+    L3 = 433.47
+    L4 = 402.119
+    L5 = 628.247
+    W1 = 41.4123
+    W2 = 18.8342
+    W3 = 167.276
+    W4 = 10.371
+    W5 = 60.3214
+
+SP Optim1[1].SP1[35] <ECE485finaltest_lib:cell_3:schematic>  optIter=35  freq=(0 Hz->10 GHz)
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(6.939300) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee5'
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #35:
+  CurrentEF: 0.0367146899085101
+  Optimization variables:
+    L1 = 284.484
+    L2 = 267.214
+    L3 = 419.733
+    L4 = 377.889
+    L5 = 618.239
+    W1 = 37.5896
+    W2 = 17.246
+    W3 = 189.278
+    W4 = 9.51007
+    W5 = 57.61
+
+SP Optim1[1].SP1[38] <ECE485finaltest_lib:cell_3:schematic>  optIter=38  freq=(0 Hz->10 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #38:
+  CurrentEF: 0.0335636048745256
+  Optimization variables:
+    L1 = 238.796
+    L2 = 249.754
+    L3 = 434.29
+    L4 = 359.931
+    L5 = 626.242
+    W1 = 37.5392
+    W2 = 16.8795
+    W3 = 186.65
+    W4 = 8.76734
+    W5 = 53.3874
+
+SP Optim1[1].SP1[41] <ECE485finaltest_lib:cell_3:schematic>  optIter=41  freq=(0 Hz->10 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #41:
+  CurrentEF: 0.031500171813655
+  Optimization variables:
+    L1 = 238.02
+    L2 = 283.761
+    L3 = 402.514
+    L4 = 363.311
+    L5 = 591.118
+    W1 = 36.8835
+    W2 = 18.237
+    W3 = 174.43
+    W4 = 8.38982
+    W5 = 51.553
+
+SP Optim1[1].SP1[46] <ECE485finaltest_lib:cell_3:schematic>  optIter=46  freq=(0 Hz->10 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #46:
+  CurrentEF: 0.0264097299326656
+  Optimization variables:
+    L1 = 214.905
+    L2 = 271.467
+    L3 = 415.16
+    L4 = 373.273
+    L5 = 610.79
+    W1 = 40.0485
+    W2 = 18.1233
+    W3 = 167.088
+    W4 = 9.21673
+    W5 = 48.6668
+
+SP Optim1[1].SP1[51] <ECE485finaltest_lib:cell_3:schematic>  optIter=51  freq=(0 Hz->10 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #51:
+  CurrentEF: 0.0364203168234155
+  Optimization variables:
+    L1 = 214.905
+    L2 = 271.467
+    L3 = 415.16
+    L4 = 373.273
+    L5 = 610.79
+    W1 = 40.0485
+    W2 = 18.1233
+    W3 = 167.088
+    W4 = 9.21673
+    W5 = 48.6668
+
+SP Optim1[1].SP1[101] <ECE485finaltest_lib:cell_3:schematic>  optIter=101  freq=(0 Hz->10 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Iteration/Trial #101:
+  CurrentEF: 0.0113888611221943
+  Optimization variables:
+    L1 = 214.905
+    L2 = 271.467
+    L3 = 415.16
+    L4 = 373.273
+    L5 = 610.79
+    W1 = 40.0485
+    W2 = 18.1233
+    W3 = 167.088
+    W4 = 9.21673
+    W5 = 48.6668
 
 Resource usage:
-  Total stopwatch time     =     1.50 seconds.
+  Total stopwatch time     =  3530.82 seconds.
 

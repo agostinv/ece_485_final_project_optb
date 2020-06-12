@@ -1,21 +1,21 @@
 
-Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="ECE485finaltest_lib:cell_3:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=yes TopDesignName="ECE485finaltest_lib:cell_3:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
 MLIN2:TL1  N__1 N__0 Subst="MSub1" W=119.675591 mil L=408.917323 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-MLIN2:TL2  N__2 N__3 Subst="MSub1" W=16.612913 mil L=437.460630 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-MLIN2:TL3  N__4 N__5 Subst="MSub1" W=10.878740 mil L=294.414961 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-MLIN2:TL4  N__6 N__7 Subst="MSub1" W=10.878740 mil L=147.207480 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-MLIN2:TL5  N__8 N__9 Subst="MSub1" W=16.612913 mil L=437.460630 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL2  N__2 N__3 Subst="MSub1" W=W2 mil L=L2 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL3  N__4 N__5 Subst="MSub1" W=W4 mil L=L4 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL4  N__6 N__7 Subst="MSub1" W=W4 mil L=L4 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL5  N__8 N__9 Subst="MSub1" W=W2 mil L=L2 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
 MLIN2:TL6  N__10 N__11 Subst="MSub1" W=119.675591 mil L=408.917323 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-MTEE_ADS:Tee1  N__0 N__2 N__14 Subst="MSub1" W1=25.0 mil W2=25.0 mil W3=50.0 mil 
-MTEE_ADS:Tee2  N__3 N__4 N__28 Subst="MSub1" W1=25.0 mil W2=25.0 mil W3=50.0 mil 
-MTEE_ADS:Tee3  N__5 N__6 N__20 Subst="MSub1" W1=25.0 mil W2=25.0 mil W3=50.0 mil 
-MTEE_ADS:Tee4  N__7 N__8 N__23 Subst="MSub1" W1=25.0 mil W2=25.0 mil W3=50.0 mil 
-MTEE_ADS:Tee5  N__9 N__10 N__26 Subst="MSub1" W1=25.0 mil W2=25.0 mil W3=50.0 mil 
-MLOC2:TL7  N__14 Subst="MSub1" W=38.825354 mil L=427.732283 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-MLOC2:TL8  N__28 Subst="MSub1" W=188.760236 mil L=399.885827 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-MLOC2:TL9  N__20 Subst="MSub1" W=58.477559 mil L=421.740157 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-MLOC2:TL10  N__23 Subst="MSub1" W=188.760236 mil L=399.885827 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-MLOC2:TL11  N__26 Subst="MSub1" W=38.825354 mil L=427.732283 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MTEE_ADS:Tee1  N__0 N__2 N__14 Subst="MSub1" W1=119.67559 mil W2=W2 mil W3=W1 mil 
+MTEE_ADS:Tee2  N__3 N__4 N__28 Subst="MSub1" W1=W2 mil W2=W4 mil W3=W3 mil 
+MTEE_ADS:Tee3  N__5 N__6 N__20 Subst="MSub1" W1=W4 mil W2=W4 mil W3=W5 mil 
+MTEE_ADS:Tee4  N__7 N__8 N__23 Subst="MSub1" W1=W4 mil W2=W2 mil W3=W3 mil 
+MTEE_ADS:Tee5  N__9 N__10 N__26 Subst="MSub1" W1=W2 mil W2=119.6755 mil W3=W1 mil 
+MLOC2:TL7  N__14 Subst="MSub1" W=W1 mil L=L1 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLOC2:TL8  N__28 Subst="MSub1" W=W3 mil L=L3 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLOC2:TL9  N__20 Subst="MSub1" W=W5 mil L=L5 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLOC2:TL10  N__23 Subst="MSub1" W=W3 mil L=L3 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLOC2:TL11  N__26 Subst="MSub1" W=W1 mil L=L1 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
 model MSub1 MSUB H=62 mil Er=4.290 Mur=1 Cond=5.8e7 Hu=3.9e+034 mil T=1.37 mil TanD=0.014 Rough=0 mil DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
 S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
 SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
@@ -33,3 +33,35 @@ OutputPlan:SP1_Output \
 Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
 Port:Term1  N__1 0 Num=1 Z=50 Ohm Noise=yes 
 Port:Term2  N__11 0 Num=2 Z=50 Ohm Noise=yes 
+OptimGoal:OptimGoal1 Expr="dB(S(1,2))" SimInstanceName="SP1" Weight=1 \
+IndepVar[1]="freq" \
+SpecLimitLine[1]="OptimGoal1_limit1" SpecLimitLine[2]="OptimGoal1_limit2" SpecLimitLine[3]="OptimGoal1_limit3" 
+SpecLimitLine:"OptimGoal1_limit1" Type="GreaterThan" Min=-0.8 Weight=1 \
+IndepVar[1]="freq" IndepMin[1]=5e+08 IndepMax[1]=2e+09 
+SpecLimitLine:"OptimGoal1_limit2" Type="LessThan" Max=-0.4 Weight=0.75 \
+IndepVar[1]="freq" IndepMin[1]=0.5 IndepMax[1]=2e+09 
+SpecLimitLine:"OptimGoal1_limit3" Type="LessThan" Max=-15 Weight=1 \
+IndepVar[1]="freq" IndepMin[1]=2.5e+09 IndepMax[1]=3.5e+09 
+
+Optim:"Optim1" OptimType="random" ErrorForm="L2" MaxIters=50 P=2 DesiredError=0.0 StatusLevel=4 FinalAnalysis="None" NormalizeGoals=yes SetBestValues=yes SaveSolns=yes SaveGoals=yes SaveOptimVars=no UpdateDataset=yes SaveNominal=no SaveAllIterations=no UseAllOptVars=no OptVar[1]="L5" OptVar[2]="L4" OptVar[3]="L3" OptVar[4]="L2" OptVar[5]="L1" OptVar[6]="W5" OptVar[7]="W4" OptVar[8]="W3" OptVar[9]="W2" OptVar[10]="W1" UseAllGoals=yes SaveCurrentEF=no InitialTemp=0.1 NumShootsPerIter=20 EnableCockpit=yes SaveAllTrials=no 
+
+
+W1=40.513 tune{ 19.4127 to 58.238 by 3.88254 } opt{ 19.4 to 58.2 }
+
+W2=14.9626 tune{ 8.30646 to 24.9194 by 1.66129 } opt{ 8.31 to 24.9 }
+
+W3=139.056 tune{ 94.3801 to 283.14 by 18.876 } opt{ 94.4 to 283 }
+
+W4=12.1597 tune{ 6 to 16.3181 by 1.08787 } opt{ 6 to 16.3 }
+
+W5=48.8789 tune{ 29.2388 to 87.7163 by 5.84776 } opt{ 29.2 to 87.7 }
+
+L1=303.115 tune{ 213.866 to 641.598 by 42.7732 } opt{ 214 to 642 }
+
+L2=297.221 tune{ 218.73 to 656.191 by 43.7461 } opt{ 219 to 656 }
+
+L3=434.569 tune{ 199.943 to 599.829 by 39.9886 } opt{ 200 to 600 }
+
+L4=440.303 tune{ 147.207 to 441.622 by 29.4415 } opt{ 147 to 442 }
+
+L5=606.012 tune{ 210.87 to 632.61 by 42.174 } opt{ 211 to 633 }

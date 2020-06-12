@@ -31,10 +31,9 @@ C3= g(5)/(R0*wc);
 ZLa1 = g(1)*R0/wc;
 Ca1 = g(2)/(R0*wc)
 ZCa1 = R0/g(2);
-ZLa2 = g(3)*R0/wc;
-Ca2 = g(4)/(R0*wc)
+ZLa2 = g(3)*R0;
 ZCa2 = R0/g(4);
-ZLa3 = g(5)*R0/wc;
+ZLa3 = g(5)*R0;
 
 [Tline1, Zstuba1] = KurodaLZ(ZLa1,R0);
 [Tline2,Zstuba3] = KurodaLZ(ZLa2,R0);
